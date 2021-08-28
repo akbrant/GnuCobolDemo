@@ -29,5 +29,17 @@ C:\Users\brant\AppData\Local\Gix\compiler-pkgs\gnucobol_3.1.2_vs_all_all
 We are interested in 32bit tools so run this bat file and place short cut on desktop 
 C:\Users\brant\AppData\Local\Gix\compiler-pkgs\gnucobol_3.1.2_vs_all_all\ set_env_vs_x86.bat
 
+open the above shortcut to open an command prompt
 
+change dir to:
+c:\softeware\GnuCobolDemp
 
+In command window type:
+nmake -f makefile.make testpan
+
+should build an testpan.exe, run it from command line 
+
+to open vs code in project directory type:
+code . 
+
+good luck!
