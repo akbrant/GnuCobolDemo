@@ -42,6 +42,5 @@ should build an testpan.exe, run it from command line
 to open vs code in project directory type:
 code . 
 
-good luck!
-
-my dogs love me.
+Also to run BTRV sample type in command window: 
+nmake -f makefile.make PACLOOK
