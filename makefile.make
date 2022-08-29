@@ -55,6 +55,8 @@ libcfec32: dos_get_time btrapi Gs RESSCR
 Testpan: Gs
 	$(CC) -xvg -static  -L.\SCREENIO\ -I.\SCREENIO\ .\SCREENIO\Testpan.cob Gs.obj -lGs32 
 
+PACLOOK: libcfec32
+  	cobc $(INC)  -xvg -static  PACLOOK.COB  -llibcfec32 -lw3btrv7 -L.\cBtrv\c\ 
 
 ALL: dos_get_date dos_get_time btrapi Gs RESSCR
 
