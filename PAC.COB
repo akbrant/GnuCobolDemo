@@ -1,0 +1,35 @@
+      *01  PAC-RECORD.
+           05  PAC-TIMESTAMP           PIC X(7).
+           05  PAC-YEAR                PIC 9(4).
+           05  PAC-SERIAL              PIC X(5).
+           05  PAC-PMT-SEQ             PIC 9(2).
+           05  PAC-ACT-SEQ             PIC 9(3).
+           05  PAC-ACT-DATE            PIC 9(8).
+           05  PAC-ACT-STOP-DATE       PIC 9(8).
+           05  PAC-ACTION              PIC X(2).
+           05  PAC-ACTION-DETAIL.
+               10  PAC-EMBOSS-SEQ      PIC 9(2).
+               10  PAC-EMBOSS-CHECK    PIC X(1).
+               10  PAC-EMBOSS-RES      PIC X(1).
+               10  PAC-EMBOSS-ADR      PIC 9(3).
+               10  FILLER              PIC X(1).
+           05  FILLER                  REDEFINES   PAC-ACTION-DETAIL.
+               10  PAC-FEE-TYPE        PIC X(1).
+               10  PAC-FEE-ADR         PIC 9(3).
+               10  FILLER              PIC X(4).
+           05  FILLER                  REDEFINES   PAC-ACTION-DETAIL.
+               10  PAC-PT-TYPE         PIC X(1).
+               10  FILLER              PIC X(7).
+           05  FILLER                  REDEFINES   PAC-ACTION-DETAIL.
+               10  PAC-ET-TYPE1        PIC X(1).
+               10  PAC-ET-TYPE2        PIC X(1).
+               10  PAC-ET-DATE         PIC X(6).
+           05  FILLER                  REDEFINES   PAC-ACTION-DETAIL.
+               10  PAC-TN-REQ-SEQ      PIC 9(2).
+               10  PAC-TN-STATUS-SEQ   PIC 9(2).
+               10  FILLER              PIC X(4).
+           05  FILLER                  REDEFINES   PAC-ACTION-DETAIL.
+               10  PAC-OPERATOR-SERIAL PIC X(5).
+               10  FILLER              PIC X(3).
+           05  PAC-ADFG                PIC X(5).
+           05  PAC-FISHABILITY         PIC X(1).
