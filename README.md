@@ -43,4 +43,5 @@ to open vs code in project directory type:
 code . 
 
 Also to run BTRV sample type in command window: 
+
 nmake -f makefile.make PACLOOK
